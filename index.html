@@ -18,36 +18,54 @@
             <div class="wifi"><img src="wifi.png" alt="menuBars"></div>
         </div>
         <div class="screen">
-            <p class="value1"></p>
-            <p class="value2"></p>
-            <p class="value3"></p>
-            <p class="value4">0</p>
+            <input type="text" class="inputBox" id="inputValue" placeholder="0">
         </div>
         <div class="button_container">
-            <button class="number openbracket shape1">(</button>
-            <button class="number closebracket shape1">)</button>
-            <button class="number back_space">←</button>
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="number operator">-</button>
-            <button class="number operator">/</button>
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="number operator shape2">+</button>
-            <button class="number operator">*</button>
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="number operator">%</button>
-            <button class="number">0</button>
-            <button class="number">.</button>
-            <button class="number">C</button>
-            <button class="number equal shape1">=</button>
+            <button class="number openbracket shape1" onclick="display('&#40;')">(</button>
+            <button class="number closebracket shape1" onclick="display('&#41;')">)</button>
+            <button class="number back_space" onclick="del()">←</button>
+            <button class="number" onclick="display('7')">7</button>
+            <button class="number" onclick="display('8')">8</button>
+            <button class="number" onclick="display('9')">9</button>
+            <button class="number operator" onclick="display('-')">-</button>
+            <button class="number operator" onclick="display('/')">/</button>
+            <button class="number" onclick="display('4')">4</button>
+            <button class="number" onclick="display('5')">5</button>
+            <button class="number" onclick="display('6')">6</button>
+            <button class="number operator shape2" onclick="display('+')">+</button>
+            <button class="number operator" onclick="display('*')">*</button>
+            <button class="number" onclick="display('1')">1</button>
+            <button class="number" onclick="display('2')">2</button>
+            <button class="number" onclick="display('3')">3</button>
+            <button class="number operator" onclick="display('%')">%</button>
+            <button class="number" onclick="display('0')">0</button>
+            <button class="number" onclick="display('.')">.</button>
+            <button class="number clear" onclick="Clear()">C</button>
+            <button class="number equal shape1" onclick="cal()">=</button>
         </div>
     </div>
 
+    <script>
+        let inputValue = document.getElementById('inputValue');
+
+        function display(num) {
+            inputValue.value += num;
+        }
+        function cal() {
+            try {
+                inputValue.value = eval(inputValue.value)
+            }
+            catch (err) {
+                alert('Invalid')
+            }
+        }
+        Clear = () => {
+            inputValue.value = "";
+        }
+        del = () => {
+            inputValue.value = inputValue.value.slice(0, -1)
+        }
+    </script>
 </body>
 
 </html>

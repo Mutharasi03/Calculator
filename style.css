@@ -18,7 +18,6 @@ body {
   margin-left: 30px;
   margin-top: 20px;
   position: relative;
-
 }
 
 .black_space {
@@ -34,42 +33,40 @@ body {
 
 .wifi img {
   width: 60px;
-
 }
 
 .top_screen {
   display: flex;
   margin-top: 25px;
   justify-content: space-evenly;
-
 }
 
-.screen {
-  margin-top: 180px;
-  margin-right: 20px;
+.inputBox {
+  border: none;
+  background-color: transparent;
+  text-align: end;
+  padding-top: 160px;
+  padding-right: 20px;
+  width: 100%;
+  font-size: 2rem;
+  color: white;
 }
-
-.value4 {
-  text-align: right;
-
+::placeholder{
+  color: white;
 }
-
 .cal .button_container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
   row-gap: 12px;
   margin-top: 20px;
-
 }
 
 .shape1 {
-
   border-radius: 50px;
 }
 
 .number {
-
   padding: 18px;
   padding: 15px;
   width: 80%;
@@ -79,7 +76,6 @@ body {
   border: none;
   background: none;
   cursor: pointer;
-
 }
 
 .openbracket {
@@ -104,7 +100,9 @@ body {
   border-radius: 40px;
   width: 70%;
 }
-
+.clear{
+  background-image: linear-gradient(#fb78a4, #fa2d90);
+}
 .equal {
   grid-column: 4/6;
   background-image: linear-gradient(#fb78a4, #fa2d90);
@@ -114,6 +112,6 @@ body {
   background-image: linear-gradient(#fdb66d, #f86569);
 }
 
-button:focus, button:active {
+button:active,button:focus{
   background-color: rgb(45, 74, 106, 1);
 }
