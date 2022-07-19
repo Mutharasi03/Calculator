@@ -18,7 +18,7 @@
             <div class="wifi"><img src="wifi.png" alt="menuBars"></div>
         </div>
         <div class="screen">
-            <input type="text" class="inputBox" id="inputValue" placeholder="0">
+            <input type="text" class="inputBox" id="outputValue" placeholder="0">
         </div>
         <div class="button_container">
             <button class="number openbracket shape1" onclick="display('&#40;')">(</button>
@@ -46,24 +46,24 @@
     </div>
 
     <script>
-        let inputValue = document.getElementById('inputValue');
+        let outputValue = document.getElementById('outputValue');
 
         function display(num) {
-            inputValue.value += num;
+            outputValue.value += num;
         }
         function cal() {
             try {
-                inputValue.value = eval(inputValue.value)
+                outputValue.value = eval(outputValue.value)
             }
             catch (err) {
                 alert('Invalid')
             }
         }
         Clear = () => {
-            inputValue.value = "";
+            outputValue.value = "";
         }
         del = () => {
-            inputValue.value = inputValue.value.slice(0, -1)
+            outputValue.value = outputValue.value.slice(0, -1)
         }
     </script>
 </body>
