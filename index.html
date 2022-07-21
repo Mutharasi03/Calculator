@@ -41,7 +41,7 @@
             <button class="number" onclick="display('0')">0</button>
             <button class="number" onclick="display('.')">.</button>
             <button class="number clear" onclick="clearValue()">C</button>
-            <button class="number equal shape1" onclick="cal()">=</button>
+            <button class="number equal shape1" onclick="calculateValue()">=</button>
         </div>
     </div>
 
@@ -51,7 +51,7 @@
         function display(num) {
             outputValue.value += num;
         }
-        function cal() {
+        function calculateValue() {
             try {
                 outputValue.value = eval(outputValue.value)
             }
