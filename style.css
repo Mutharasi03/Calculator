@@ -145,6 +145,6 @@ animation:colorAnimation 8s linear infinite;
 
 .container{
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem;
 }
 }
