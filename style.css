@@ -24,12 +24,6 @@ body {
   position: relative;
 }
 
-.black_space {
-  width: 100px;
-  height: 15px;
-  background-color: black;
-  border-radius: 30px;
-}
 
 .inputBox {
   border: none;
