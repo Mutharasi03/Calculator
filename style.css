@@ -137,9 +137,6 @@ animation:colorAnimation 8s linear infinite;
   60%{
     color:#CA4E79;
   }
-  90%{
-    color:#FFC18E ;
-  }
 }
 @media only screen and (max-width:480px) {
 
