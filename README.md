@@ -1,7 +1,7 @@
 # Calculator
 A simple calculator based on Html, Css and Javascript.
 
-Check Out the app:https://freecalculator-k.netlify.app/
+Check out the app:https://freecalculator-k.netlify.app/
 
 
  screenshot:
