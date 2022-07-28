@@ -10,20 +10,15 @@
 </head>
 
 <body>
-
+<div class="container">
     <div class="cal">
-        <div class="top_screen">
-            <div class="time">12:00AM</div>
-            <p class="black_space"></p>
-            <div class="wifi"><img src="wifi.png" alt="menuBars"></div>
-        </div>
         <div class="screen">
             <input type="text" class="inputBox" id="outputValue" placeholder="0">
         </div>
         <div class="button_container">
             <button class="number openbracket shape1" onclick="display('&#40;')">(</button>
             <button class="number closebracket shape1" onclick="display('&#41;')">)</button>
-            <button class="number back_space" onclick="del()">←</button>
+            <button class="number back_space" onclick="del()"><span>&#8592;</span></button>
             <button class="number" onclick="display('7')">7</button>
             <button class="number" onclick="display('8')">8</button>
             <button class="number" onclick="display('9')">9</button>
@@ -44,7 +39,16 @@
             <button class="number equal shape1" onclick="calculateValue()">=</button>
         </div>
     </div>
+    <div class="aboutCalculator">
+        <div class="aboutHeading">
+            <span>Free Calculator</span> 
+        </div>
+       <div class="content">
+        It's provides simple and perform basic calculations such as addition, subtraction, multiplication and division.
+       </div>
 
+    </div>
+</div>
     <script>
         let outputValue = document.getElementById('outputValue');
 
