@@ -6,4 +6,5 @@ Check out the app:https://freecalculator-k.netlify.app/
 
  screenshot:
 
-![calculatorimg](https://user-images.githubusercontent.com/88454070/181455375-e64a3b65-ffda-4ec8-b6c3-556cc04d7a9b.png)
+
+![calculator](https://user-images.githubusercontent.com/88454070/181719840-d9f63c7d-6bc8-4b81-b4a2-5584863a892b.png)
