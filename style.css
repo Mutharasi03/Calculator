@@ -15,7 +15,7 @@ body {
 .cal {
   border-radius: 50px;
   border: 5px solid black;
-  background-image: linear-gradient(#361f9e,#070d24);
+  background-image:linear-gradient(#361f9e,#070d24);
   height: 600px;
   width: 300px;
   color: rgb(0, 0, 0);
@@ -56,9 +56,8 @@ body {
   width: 80%;
   border-radius: 40px;
   margin-left: 6px;
-  color: white;
   font-size: 16px;
-  
+  color:white;
   border: none;
   background: none;
   cursor: pointer;
@@ -75,7 +74,7 @@ body {
 }
 
 .back_space {
-  background:linear-gradient(#3C21B7,#3a4ec2);
+  background:linear-gradient(#3C21B7,#5E72EB);
 }
 
 .shape2 {
@@ -87,15 +86,15 @@ body {
   width: 70%;
 }
 .clear{
-  background-image: linear-gradient(#3C21B7,#5E72EB);
+  background-image:linear-gradient(#3C21B7,#5E72EB);
 }
-.equal {
+  .equal {
   grid-column: 4/6;
-  background-image: linear-gradient(#3C21B7,#5E72EB);
+  background-image:linear-gradient(#3C21B7,#5E72EB);
 }
 
 .operator {
-  background-image: linear-gradient(#120C6E,#5E72EB);
+  background-image: linear-gradient(#27c092,#a05eeb);
 }
 
 button:active,button:focus{
